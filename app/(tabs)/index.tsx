@@ -20,7 +20,6 @@ export default function HomeScreen() {
     const onCategoryChanged=(category:string)=>{
         setCategory(category)
         console.log(category);
-        
     }
   return (
     <>
@@ -53,7 +52,7 @@ export default function HomeScreen() {
       </View>
       <TouchableOpacity style={{backgroundColor:Colors.primaryColor,padding:14,borderRadius:10}}><Ionicons name='options' size={28} color={'white'}></Ionicons></TouchableOpacity>
     </View>
-    <Category onCatChanged={onCategoryChanged}></Category>
+    <Category onCatChanged2={onCategoryChanged}></Category>
     <Listing listings={ListingData}></Listing>
   </View>
     </>

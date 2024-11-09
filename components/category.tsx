@@ -8,9 +8,9 @@ interface Category {
 }
 
 interface CategoryCardProps {
-    onCatChanged: (category: string) => void; // Incluindo o onCatChanged nas props
+    onCatChanged2: (category: string) => void; // Incluindo o onCatChanged nas props
 }
-export default function Category({onCatChanged}:CategoryCardProps) {
+export default function Category({onCatChanged2}:CategoryCardProps) {
     const categories = [
         { title: 'Beaches', iconName: 'add' },
         { title: 'Mountains', iconName: 'add' },
@@ -28,7 +28,9 @@ export default function Category({onCatChanged}:CategoryCardProps) {
     const onCategoryChanged=(category:string)=>{
         setCategory(category)
         
+        
     }
+    onCatChanged2(category);
 
     return (
         <View>
