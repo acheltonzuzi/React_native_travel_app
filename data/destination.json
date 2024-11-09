@@ -1,0 +1,112 @@
+[
+  {
+      "id": 1,
+      "name": "Cristo Redentor",
+      "description": "O Cristo Redentor é um famoso ponto turístico localizado no Rio de Janeiro, Brasil, e uma das sete maravilhas do mundo moderno.",
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1709884735646-897b57461d61?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": "R$ 80",
+      "duration": "1-2 horas",
+      "location": "Rio de Janeiro, Brasil",
+      "category": "Museums"
+  },
+  {
+      "id": 2,
+      "name": "Machu Picchu",
+      "description": "Machu Picchu é uma antiga cidade inca localizada no topo das montanhas dos Andes, no Peru.",
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1709884735646-897b57461d61?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": "R$ 200",
+      "duration": "3-4 horas",
+      "location": "Cusco, Peru",
+      "category": "Mountains"
+  },
+  {
+      "id": 3,
+      "name": "Eiffel Tower",
+      "description": "A Torre Eiffel é um icônico monumento localizado em Paris, França, conhecido mundialmente.",
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1709884735646-897b57461d61?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": "R$ 120",
+      "duration": "1-2 horas",
+      "location": "Paris, França",
+      "category": "Parks"
+  },
+  {
+      "id": 4,
+      "name": "Pyramids of Giza",
+      "description": "As Pirâmides de Gizé, no Egito, são uma das Sete Maravilhas do Mundo Antigo.",
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1709884735646-897b57461d61?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": "R$ 150",
+      "duration": "2-3 horas",
+      "location": "Cairo, Egito",
+      "category": "Adventure"
+  },
+  {
+      "id": 5,
+      "name": "Colosseum",
+      "description": "O Coliseu de Roma é um antigo anfiteatro romano, conhecido por ser o maior já construído.",
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1709884735646-897b57461d61?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": "R$ 100",
+      "duration": "1-2 horas",
+      "location": "Roma, Itália",
+      "category": "Museums"
+  },
+  {
+      "id": 6,
+      "name": "Great Wall of China",
+      "description": "A Grande Muralha da China é uma das maiores construções humanas, estendendo-se por milhares de quilômetros.",
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1709884735646-897b57461d61?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": "R$ 120",
+      "duration": "2-3 horas",
+      "location": "Pequim, China",
+      "category": "Mountains"
+  },
+  {
+      "id": 7,
+      "name": "Taj Mahal",
+      "description": "O Taj Mahal é um mausoléu monumental situado em Agra, na Índia, e considerado uma das Sete Maravilhas do Mundo.",
+      "rating": 5.0,
+      "image": "https://images.unsplash.com/photo-1709884735646-897b57461d61?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": "R$ 100",
+      "duration": "1-2 horas",
+      "location": "Agra, Índia",
+      "category": "Museums"
+  },
+  {
+      "id": 8,
+      "name": "Sydney Opera House",
+      "description": "A Casa de Ópera de Sydney é um dos mais famosos centros de artes performáticas do mundo.",
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1709884735646-897b57461d61?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": "R$ 90",
+      "duration": "1-2 horas",
+      "location": "Sydney, Austrália",
+      "category": "Events"
+  },
+  {
+      "id": 9,
+      "name": "Angkor Wat",
+      "description": "Angkor Wat é um vasto complexo de templos em Siem Reap, Camboja, conhecido por sua arquitetura incrível.",
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1709884735646-897b57461d61?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": "R$ 80",
+      "duration": "3-4 horas",
+      "location": "Siem Reap, Camboja",
+      "category": "Adventure"
+  },
+  {
+      "id": 10,
+      "name": "Statue of Liberty",
+      "description": "A Estátua da Liberdade é um monumento em Nova York, EUA, que simboliza a liberdade e a democracia.",
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1709884735646-897b57461d61?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": "R$ 90",
+      "duration": "1-2 horas",
+      "location": "Nova York, EUA",
+      "category": "Events"
+  }
+]

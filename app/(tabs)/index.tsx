@@ -1,52 +1,62 @@
-import { Image, StyleSheet, Platform } from 'react-native';
+import { Image, StyleSheet, Platform, TouchableOpacity, View, Text, TextInput } from 'react-native';
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
-
+import { Stack } from 'expo-router';
+import { Ionicons } from '@expo/vector-icons';
+import React, { useState } from 'react';
+import {useHeaderHeight} from '@react-navigation/elements'
+import style from '@/constants/Styles';
+import Category from '@/components/category';
+import Listing from '@/components/listing';
+import ListingData from '@/data/destination.json'
+import { Colors } from '@/constants/Colors';
 export default function HomeScreen() {
+  const headerHeight=useHeaderHeight()
+  const [category,setCategory]=useState<string>('All')
+
+    const onCategoryChanged=(category:string)=>{
+        setCategory(category)
+        console.log(category);
+        
+    }
   return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
-      headerImage={
-        <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
-        />
-      }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
-        <HelloWave />
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({ ios: 'cmd + d', android: 'cmd + m' })}
-          </ThemedText>{' '}
-          to open developer tools.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-        <ThemedText>
-          Tap the Explore tab to learn more about what's included in this starter app.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          When you're ready, run{' '}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
-      </ThemedView>
-    </ParallaxScrollView>
+    <>
+      <Stack.Screen options={{
+        headerTransparent: true, headerTitle: '',
+        headerLeft: () => (
+          <TouchableOpacity style={{ marginLeft: 20 }} onPress={() => { }}>
+            <Image source={{ uri: 'https://xsgames.co/randomusers/avatar.php?g=female' }} style={{ width: 40, height: 40, borderRadius: 10 }}></Image>
+          </TouchableOpacity>),
+        headerRight: () => (
+          <TouchableOpacity
+            style={{
+              marginRight: 20,
+              backgroundColor: Colors.white,
+              padding: 10,
+              borderRadius: 10,
+              elevation: 5
+            }}
+            onPress={() => { }}>
+            <Ionicons name='notifications' size={20}></Ionicons>
+          </TouchableOpacity>)
+      }}></Stack.Screen>
+
+  <View style={[style.container,{paddingTop:headerHeight}]}>
+    <Text style={style.headingTxt}>Explore the beautiful world </Text>
+    <View style={{flexDirection:'row',gap:5,alignItems:'center',marginTop:10}}>
+      <View style={{flexDirection:'row',alignItems:'center',gap:5,backgroundColor:'white',padding:10,borderRadius:10,flex:1}}>
+        <Ionicons name='search' size={18}></Ionicons>
+        <TextInput style={{width:240,padding:5}} placeholder='Search...'></TextInput>
+      </View>
+      <TouchableOpacity style={{backgroundColor:Colors.primaryColor,padding:14,borderRadius:10}}><Ionicons name='options' size={28} color={'white'}></Ionicons></TouchableOpacity>
+    </View>
+    <Category onCatChanged={onCategoryChanged}></Category>
+    <Listing listings={ListingData}></Listing>
+  </View>
+    </>
   );
 }
 
