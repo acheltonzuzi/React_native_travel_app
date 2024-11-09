@@ -38,6 +38,7 @@ export default function CategoryCard({ categories, onCatChanged }: CategoryCardP
         <ScrollView
             horizontal
             showsHorizontalScrollIndicator={false}
+            
             ref={scrollViewRef}
         >
             <View style={styles.container}>

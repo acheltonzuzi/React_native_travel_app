@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "name": "Holiday Travel Package",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "rating": 4.7,
+      "reviews": 152
+    },
+    {
+      "id": 2,
+      "name": "Beach Paradise Getaway",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "rating": 4.9,
+      "reviews": 210
+    },
+    {
+      "id": 3,
+      "name": "Mountain Adventure Retreat",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "rating": 4.5,
+      "reviews": 98
+    },
+    {
+      "id": 4,
+      "name": "City Lights Experience",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "rating": 4.8,
+      "reviews": 175
+    },
+    {
+      "id": 5,
+      "name": "Cruise to the Caribbean",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "rating": 4.6,
+      "reviews": 143
+    },
+    {
+      "id": 6,
+      "name": "Safari Adventure in Kenya",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "rating": 4.9,
+      "reviews": 189
+    }
+  ]
+  

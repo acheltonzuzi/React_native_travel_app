@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Platform, TouchableOpacity, View, Text, TextInput } from 'react-native';
+import { Image, StyleSheet, Platform, TouchableOpacity, View, Text, TextInput, ScrollView } from 'react-native';
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
@@ -12,14 +12,15 @@ import style from '@/constants/Styles';
 import Category from '@/components/category';
 import Listing from '@/components/listing';
 import ListingData from '@/data/destination.json'
+import GroupData from '@/data/group.json'
 import { Colors } from '@/constants/Colors';
+import GroupType from '@/components/groupType';
 export default function HomeScreen() {
   const headerHeight=useHeaderHeight()
   const [category,setCategory]=useState<string>('All')
 
     const onCategoryChanged=(category:string)=>{
         setCategory(category)
-        console.log(category);
     }
   return (
     <>
@@ -43,6 +44,8 @@ export default function HomeScreen() {
           </TouchableOpacity>)
       }}></Stack.Screen>
 
+
+<ScrollView showsVerticalScrollIndicator={false}>
   <View style={[style.container,{paddingTop:headerHeight}]}>
     <Text style={style.headingTxt}>Explore the beautiful world </Text>
     <View style={{flexDirection:'row',gap:5,alignItems:'center',marginTop:10}}>
@@ -53,8 +56,10 @@ export default function HomeScreen() {
       <TouchableOpacity style={{backgroundColor:Colors.primaryColor,padding:14,borderRadius:10}}><Ionicons name='options' size={28} color={'white'}></Ionicons></TouchableOpacity>
     </View>
     <Category onCatChanged2={onCategoryChanged}></Category>
-    <Listing listings={ListingData}></Listing>
+    <Listing listings={ListingData} category={category}></Listing>
+    <GroupType listgroup={GroupData}></GroupType>
   </View>
+</ScrollView>
     </>
   );
 }

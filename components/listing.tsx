@@ -4,7 +4,7 @@ import { Colors } from '@/constants/Colors';
 import { Ionicons } from '@expo/vector-icons';
 import { Link } from 'expo-router';
 
-interface TouristSpot {
+export interface TouristSpot {
     id: number;
     name: string;
     description: string;
@@ -18,20 +18,20 @@ interface TouristSpot {
 
 interface List {
     listings: TouristSpot[],
+    category: string
 }
 
-export default function Listing({ listings }: List) {
+export default function Listing({ listings, category }: List) {
     const [loading, setLoading] = useState<boolean>(false)
 
-   /*  useEffect(() => {
-        console.log('Updating');
+    useEffect(() => {
         setLoading(true)
         setTimeout(() => {
             setLoading(false)
 
         }, 200)
 
-    }, [category]) */
+    }, [category])
     const renderItem: ListRenderItem<TouristSpot> = ({ item }: { item: TouristSpot }) => (
         <Link href={`/listing/${item.id}}`} asChild>
             <TouchableOpacity>
@@ -53,7 +53,7 @@ export default function Listing({ listings }: List) {
     return (
         <View style={styles.listContainer}>
             <FlatList
-                data={listings}
+                data={loading?[]:listings}
                 renderItem={renderItem}
                 keyExtractor={(item) => item.id.toString()}
                 horizontal
@@ -67,13 +67,16 @@ const styles = StyleSheet.create({
     listContainer: {
         flex: 1,
         marginTop: 10,
+        
     },
     cardContainer: {
         marginRight: 20,
         backgroundColor: Colors.white,
         padding: 10,
         //width:220
-        elevation: 3
+        elevation: 3,
+        marginBottom:10,
+        borderRadius:5
     },
     image: {
         width: 200,
